@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta'); 
+
+:root{
+    --dark1:#141414;
+    --dark2: #323232;
+    --dark3: #222222;
+    --white: #FFFF;
+    --green: rgb(103, 195, 80);
+    --green2: rgb(51, 149, 26);
+    --red: rgb(184, 40, 35);
+    --red2: rgb(146, 22, 17);
+}
+
+body{
+    font-family: 'Mukta';
+    background-color: var(--dark1);
+    color: var(--white);
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-task,
+#btn-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-task{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn-task{
+    background-color: var(--dark2);
+    color: var(--white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-task:hover{
+    background-color: var(--dark3);
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
