@@ -1,4 +1,9 @@
+
+// Variavel
+
 const localStorageKey = 'to-do-list'
+
+// Função da Validação  Task
 
 function validateIfExistsNewTask(){
      let values = JSON.parse(localStorageKey.getItem(localStorageKey) || "[]")
@@ -8,12 +13,14 @@ function validateIfExistsNewTask(){
 
 }
 
+// Função de nova task
+
 function newTask(){
   let input = document.getElementById('input-new-task');
   input.style.border = '';
 
 
-  // validação
+  // validação que ja existe a task
 
   if(!input.value){
     input.style.border = '1px solid red'
@@ -43,6 +50,8 @@ function showValues(){
 
   }
 }
+
+// Função de remover task
 
 function rtemoveItem(data){
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta'); 
 
+
+/* Cores do To do List*/
+
 :root{
     --dark1:#141414;
     --dark2: #323232;
@@ -21,6 +24,8 @@ body{
    gap: 4rem;
 }
 
+/* Container Inputs*/
+
 .content{
     display: flex;
     flex-direction: column;
@@ -33,6 +38,9 @@ body{
     gap: 1rem;
     flex-wrap: wrap;
 }
+
+
+/* Style do Input*/
 
 #input-task,
 #btn-task{
